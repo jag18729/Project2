@@ -9,7 +9,7 @@ $(function() {
 
 // Pet information object with keys "name", "weight", "happiness"
 var pet_info = {
-    name: "Buddy",
+    name: "Daisy",
     weight: 25,
     happiness: 50,
     cleanliness: 100
