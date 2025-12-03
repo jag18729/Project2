@@ -90,20 +90,18 @@ function updatePetInfoInHtml() {
 }
 
 // Visual notification - shows pet speech bubble with message
-// Does not use console.log() or alert()
 function showPetMessage(message) {
     var $speechBubble = $('.pet-speech-bubble');
 
-    // UNIQUE JQUERY METHOD #1: .fadeIn()
-    // The fadeIn() method gradually changes the opacity of selected elements from hidden to visible
-    // Syntax: $(selector).fadeIn(speed, callback)
-    // This creates a smooth appearance animation for the speech bubble
-    $speechBubble.text(message).fadeIn(400);
+    // UNIQUE JQUERY METHOD #1: .finish()
+    // Stops all queued animations to prevent stacking when buttons are clicked rapidly
+    $speechBubble.finish();
 
-    // UNIQUE JQUERY METHOD #2: .delay()
-    // The delay() method sets a timer to delay the execution of subsequent items in the queue
-    // Syntax: $(selector).delay(milliseconds)
-    // Combined with fadeOut(), this keeps the message visible for 3 seconds before fading away
+    // UNIQUE JQUERY METHOD #2: .empty()
+    // Clears previous message content before displaying the new one
+    $speechBubble.empty().text(message).fadeIn(400);
+
+    // Display message for 3 seconds then fade out
     $speechBubble.delay(3000).fadeOut(400);
 }
 
