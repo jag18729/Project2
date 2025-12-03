@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Examples</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="devtools-styles.css">
+</head>
+<body>
+    <header>
+        <h1>DOM Manipulation Examples</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Example 5: Inspect Elements</h2>
+            <div class="demo-box">
+                <h3>Right-click and Inspect this heading</h3>
+                <p>You can also press Ctrl+Shift+C to select elements</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 6: Edit Content</h2>
+            <div class="demo-box">
+                <h3 id="editable-heading">Double-click this text in DevTools</h3>
+                <p style="color: blue;">This paragraph has a color attribute</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 7: Reorder Elements</h2>
+            <div class="demo-box">
+                <ul id="sortable-list">
+                    <li>Item A - Try dragging in DevTools</li>
+                    <li>Item B - Can be reordered</li>
+                    <li>Item C - Press Delete to remove</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 8: Console Commands</h2>
+            <div class="demo-box">
+                <div id="console-target">Select this element and type $0 in console</div>
+                <button id="demo-button">Inspect Me</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 9: Edit Styles</h2>
+            <div class="demo-box">
+                <div class="styled-box">Inspect this box and modify its styles</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 10: Event Listeners</h2>
+            <div class="demo-box">
+                <button id="multi-event-button">Button with Multiple Events</button>
+                <div class="result">Check Event Listeners panel</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="devtools-dom.js"></script>
+</body>
+</html>

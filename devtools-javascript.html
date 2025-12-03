@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Debugging Examples</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="devtools-styles.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Debugging Examples</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Example 1: Breakpoints</h2>
+            <p>This calculator has a bug. Use breakpoints to find it!</p>
+
+            <div class="demo-box">
+                <label>Number 1:</label>
+                <input type="text" id="num1" value="5">
+
+                <label>Number 2:</label>
+                <input type="text" id="num2" value="3">
+
+                <button id="add-button">Add Numbers</button>
+
+                <div class="result">Result: <span id="result">?</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 2: Event Listener Breakpoints</h2>
+            <div class="demo-box">
+                <button id="event-button">Click Me</button>
+                <div class="result">Clicks: <span id="click-count">0</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 3: Watch Expressions</h2>
+            <div class="demo-box">
+                <div>Health: <span id="pet-health">100</span></div>
+                <div>Energy: <span id="pet-energy">50</span></div>
+                <button id="feed-pet">Feed</button>
+                <button id="exercise-pet">Exercise</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 4: Console Testing</h2>
+            <div class="demo-box">
+                <button id="console-button">Test Function</button>
+                <div class="result">Check Console</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="devtools-javascript.js"></script>
+</body>
+</html>
